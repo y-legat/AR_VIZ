@@ -21,7 +21,5 @@ public class CityScript : MonoBehaviour {
         //set City active
         GameObject.Find("SzeneContent/Holograms/City").SetActive(true);
         //GameObject.Find("SzeneContent/InformationPanel").SetActive(true);
-
-
     }
 }

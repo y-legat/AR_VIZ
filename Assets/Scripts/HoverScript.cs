@@ -40,7 +40,7 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         for (int i = 0; i < defaultMaterials.Length; i++)
         {
             // Highlight the material when gaze enters using the shader property.
-            defaultMaterials[i].SetFloat("_Gloss", 7.0f);
+            defaultMaterials[i].SetFloat("_Gloss", 5.0f);
             //store original material for OnFocusExit()
             tmp = gameObject.transform.parent.GetComponent<Renderer>().material;
             //set Parent (package) to houseColor 
