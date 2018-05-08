@@ -16,4 +16,10 @@ public class ExitScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void ExitAndQuit()
+    {
+        Debug.Log("Exit and Quit!");
+        Application.Quit();
+    }
 }
