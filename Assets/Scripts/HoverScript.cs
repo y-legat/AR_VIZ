@@ -16,6 +16,8 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
     private Text gameObjPackage;
     private InputManager inputManager;
 
+    
+
 
     private void Start()
     {

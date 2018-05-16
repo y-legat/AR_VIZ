@@ -8,17 +8,17 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
     private GameObject child;
     public bool clicked;
     private Material [] highlightMaterials;
+    public List<GameObject> activeDependencies;
 
     public void OnFocusEnter()
     {
         if (transform.childCount > 0)
         {
-
+            // structure: empty element -> child = dependencies 
             child = gameObject.transform.GetChild(0).gameObject;
             child.SetActive(true);
             
             highlightMaterials[0].SetFloat("_Gloss", 5.0f);
-            Debug.Log(highlightMaterials[0].name);
         }
             
  
@@ -42,6 +42,12 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
                 
             child = gameObject.transform.GetChild(0).gameObject;
 
+            if (!activeDependencies.Contains(child))
+            {
+                activeDependencies.Add(child);
+            }
+            
+           
             if (clicked && child != null)
             {
                 child.SetActive(false);
@@ -71,4 +77,16 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
 	void Update () {
         
 	}
+
+    public void deselectAllDependencies()
+    {
+
+        //TODO global List with added Dependencies : 
+        foreach (GameObject g in activeDependencies)
+        {
+            g.SetActive(false);
+
+        }
+        activeDependencies.Clear();
+    }
 }

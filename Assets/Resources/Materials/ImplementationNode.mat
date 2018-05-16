@@ -9,7 +9,7 @@ Material:
   m_Name: ImplementationNode
   m_Shader: {fileID: 4800000, guid: f1f3948b20c230044bda31b620ddd37f, type: 3}
   m_ShaderKeywords: _EMISSION _FORCEPERPIXEL_ON _GLOSSYREFLECTIONS_OFF _SHADE4_ON
-    _SPECULARHIGHLIGHTS_OFF _USEAMBIENT_ON _USEDIFFUSE_ON _USEMAINCOLOR_ON
+    _SPECULARHIGHLIGHTS_OFF _SPECULARHIGHLIGHTS_ON _USEAMBIENT_ON _USEDIFFUSE_ON _USEMAINCOLOR_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -78,7 +78,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _ForcePerPixel: 1
-    - _Gloss: 1
+    - _Gloss: 0.1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -91,7 +91,7 @@ Material:
     - _Shade4: 1
     - _SmoothnessTextureChannel: 0
     - _Specular: 10
-    - _SpecularHighlights: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseAmbient: 1
