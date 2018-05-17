@@ -8,6 +8,9 @@ using UnityEngine;
 
 public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
 {
+    private static GameObject boundingBox;
+    public static GameObject informationPanel;
+
     private Material[] defaultMaterials;
     private Material tmp;
     private GameObject gameobj;
@@ -15,12 +18,19 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
     private Text gameObjtype;
     private Text gameObjPackage;
     private InputManager inputManager;
-
     
 
 
     private void Start()
     {
+
+       
+
+    }
+
+    private void Awake()
+    {
+
         defaultMaterials = GetComponent<Renderer>().materials;
         if (GameObject.Find("InformationPanel") != null)
         {
@@ -29,12 +39,23 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
             gameObjtype = GameObject.Find("InformationPanel/TextContent/Subtitle02/Subtitle02.1").GetComponent<Text>();
             gameObjPackage = GameObject.Find("InformationPanel/TextContent/Subtitle03/Subtitle03.1").GetComponent<Text>();
         }
-
-    }
-
-    private void Awake()
-    {
         defaultMaterials = GetComponent<Renderer>().materials;
+
+
+        if (!GameObject.Find("BuildingBoundingBox"))
+        { 
+
+            boundingBox = new GameObject("BuildingBoundingBox");
+            Mesh wireframe = Resources.Load<Mesh>("wireframe");
+            MeshFilter filter = boundingBox.AddComponent<MeshFilter>();
+            filter.mesh = wireframe;
+
+            MeshRenderer renderer = boundingBox.AddComponent<MeshRenderer>();
+            Material mat = Resources.Load<Material>("WireframeMaterial");
+            renderer.material = mat;
+
+            boundingBox.SetActive(false);
+        }
     }
 
     public void OnFocusEnter()
@@ -73,8 +94,28 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
     }
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        if (GameObject.Find("InformationPanel") != null)
+        Vector3 center = gameObject.GetComponent<BoxCollider>().center;
+        center.x -= center.x * 0.5f;
+        boundingBox.transform.position = gameObject.transform.TransformPoint(center);
+        boundingBox.transform.rotation = GameObject.Find("City").transform.rotation;
+
+        Vector3 buildingScale = gameObject.GetComponent<BoxCollider>().size;
+        buildingScale.x = buildingScale.x * 10;
+        buildingScale.y = buildingScale.y * 5.5f;
+        buildingScale.z = buildingScale.z * 5.5f;
+
+        boundingBox.transform.localScale = buildingScale;
+        boundingBox.SetActive(true);
+
+        if (informationPanel != null)
         {
+            informationPanel.SetActive(true);
+            informationPanel.transform.position = gameObject.transform.TransformPoint(this.transform.up * gameObject.GetComponent<BoxCollider>().extents.y);
+
+            gameObjName = GameObject.Find("InformationPanel/TextContent/Subtitle01/Subtitle01.1").GetComponent<Text>();
+            gameObjtype = GameObject.Find("InformationPanel/TextContent/Subtitle02/Subtitle02.1").GetComponent<Text>();
+            gameObjPackage = GameObject.Find("InformationPanel/TextContent/Subtitle03/Subtitle03.1").GetComponent<Text>();
+
             //set Text 
             gameObjName.text = gameObject.name;
             gameObjPackage.text = gameObject.transform.parent.name;

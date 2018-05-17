@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CallMenuMain : MonoBehaviour {
-
-
-    // Todo when main menu is called activate main menu and activate tag along script
+public class PanelScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
