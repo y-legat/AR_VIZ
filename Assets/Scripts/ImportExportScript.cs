@@ -8,7 +8,29 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
     private GameObject child;
     public bool clicked;
     private Material [] highlightMaterials;
-    public List<GameObject> activeDependencies;
+    public static List<GameObject> activeDependencies;
+
+
+    void Awake()
+    {
+        activeDependencies = new List<GameObject>();
+
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+
+        clicked = false;
+        highlightMaterials = GetComponent<Renderer>().materials;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void OnFocusEnter()
     {
@@ -65,19 +87,7 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
 
     }
 
-    // Use this for initialization
-    void Start () {
-
-        clicked = false;
-        highlightMaterials = GetComponent<Renderer>().materials;
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        
-	}
-
+   
     public void deselectAllDependencies()
     {
 
