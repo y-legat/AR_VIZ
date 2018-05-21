@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanelScript : MonoBehaviour {
+public class PanelScript : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake()
+    {
         HoverScript.informationPanel = GameObject.Find("InformationPanel");
         HoverScript.informationPanel.SetActive(false);
         Debug.Log("log");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
