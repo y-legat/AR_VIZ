@@ -99,6 +99,8 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         boundingBox.transform.position = gameObject.transform.TransformPoint(center);
         boundingBox.transform.rotation = GameObject.Find("City").transform.rotation;
 
+       
+
         Vector3 buildingScale = gameObject.GetComponent<BoxCollider>().size;
         buildingScale.x = buildingScale.x * 10;
         buildingScale.y = buildingScale.y * 5.5f;
@@ -110,8 +112,9 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         if (informationPanel != null)
         {
             informationPanel.SetActive(true);
-            informationPanel.transform.position = gameObject.transform.TransformPoint(this.transform.up * gameObject.GetComponent<BoxCollider>().extents.y);
-
+            Vector3 tmp = gameObject.transform.TransformPoint(this.transform.up * gameObject.GetComponent<BoxCollider>().size.y);
+            //add small offset for y.position
+            informationPanel.transform.position = new Vector3(tmp.x, (tmp.y + 0.5f ), tmp.z);
             gameObjName = GameObject.Find("InformationPanel/TextContent/Subtitle01/Subtitle01.1").GetComponent<Text>();
             gameObjtype = GameObject.Find("InformationPanel/TextContent/Subtitle02/Subtitle02.1").GetComponent<Text>();
             gameObjPackage = GameObject.Find("InformationPanel/TextContent/Subtitle03/Subtitle03.1").GetComponent<Text>();

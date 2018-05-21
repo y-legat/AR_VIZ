@@ -8,6 +8,7 @@ public class PanelScript : MonoBehaviour {
 	void Awake () {
         HoverScript.informationPanel = GameObject.Find("InformationPanel");
         HoverScript.informationPanel.SetActive(false);
+        Debug.Log("log");
     }
 	
 	// Update is called once per frame
