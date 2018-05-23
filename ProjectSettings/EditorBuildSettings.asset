@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/HoloToolkit-Examples/Input/Scenes/DictationTest.unity
     guid: 1e81d01765ae2c74a877cf32857d8d39
+  - enabled: 0
+    path: Assets/HoloToolkit-Examples/Input/Scenes/KeyboardTest.unity
+    guid: 3fb77ac039974de4c9946609c18cdae7

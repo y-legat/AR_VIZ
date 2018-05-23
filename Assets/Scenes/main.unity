@@ -134,6 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &4794494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1069,6 +1072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!114 &85975495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,7 +1980,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 454129252}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 102082490485545312, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: m_FontSize
@@ -2392,7 +2398,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 269359641}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_exit
@@ -2851,6 +2857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &202534369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3274,138 +3283,6 @@ MonoBehaviour:
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!21 &269359641
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a00b27d5a735f7d49bdc6920b38c37a3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &270363181
 Prefab:
   m_ObjectHideFlags: 0
@@ -3449,7 +3326,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2078754844}
+      objectReference: {fileID: 1199642184}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_orientation
@@ -3477,32 +3354,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
@@ -3678,6 +3555,138 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294762127}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &306827910
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b70f900b2bba3804182d68c46ec35a63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!4 &306918659 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4290358936733916, guid: 743537cb832078f41b9093495b12254a,
@@ -4417,12 +4426,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 842610340}
+        m_MethodName: PhotoModeActive
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4439,17 +4448,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 983d860ed32d0a54fa1bc0e26d06c0dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &432806759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 432806755}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75e99c2c8d095445b8061312cbbe070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &443450372 stripped
@@ -4473,6 +4471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &443450375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4678,270 +4679,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 451806010}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &454129252
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d4b408ce05ebbc44fa988bbcf378297d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
---- !u!21 &458835900
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b70f900b2bba3804182d68c46ec35a63, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &460149743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5626,6 +5363,138 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!21 &520781315
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c9ea1a1135c091140bcbe34098d281f9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &524199672
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,7 +5708,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
+      objectReference: {fileID: 1237400709}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_Setting
@@ -6419,138 +6288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clicked: 0
---- !u!21 &602757009
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f434ca7118935ec4eb0239a7bf6d83f4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &611437858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,7 +6542,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1644911704}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 102082490485545312, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: m_FontSize
@@ -6979,6 +6716,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &681211081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6991,6 +6731,273 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0681, y: 2.1190002, z: 1.0219002}
   m_Center: {x: 0.022350192, y: 1.0598, z: -0.0004423875}
+--- !u!1 &687087674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1579474663996116, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 687087675}
+  - component: {fileID: 687087679}
+  - component: {fileID: 687087678}
+  - component: {fileID: 687087677}
+  - component: {fileID: 687087676}
+  m_Layer: 5
+  m_Name: Subtitle04.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &687087675
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224867391563566598, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687087674}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2004352602}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.016514897, y: -86}
+  m_SizeDelta: {x: 1107.8, y: 89.1924}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!102 &687087676
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687087674}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &687087677
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687087674}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &687087678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114628746298840300, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687087674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 101
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &687087679
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222081016692326802, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687087674}
+--- !u!21 &708694300
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2385074f7d28d184798b0a87ebc2623f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!21 &711911798
 Material:
   serializedVersion: 6
@@ -7144,6 +7151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &718418710
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7314,6 +7324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!1001 &744454734
 Prefab:
   m_ObjectHideFlags: 0
@@ -7420,7 +7433,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1675577727}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_search
@@ -7695,6 +7708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &774905792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8180,32 +8196,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4400682673061142, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_LocalScale.x
@@ -8214,6 +8230,11 @@ Prefab:
     - target: {fileID: 4400682673061142, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114985427041226018, guid: dc25f30298e5957498e67017b4d85807,
+        type: 2}
+      propertyPath: buttonState
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
@@ -8281,6 +8302,132 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ec41d2ad39eb15458a704b1b759f7e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &842610338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 842610339}
+  - component: {fileID: 842610340}
+  - component: {fileID: 842610341}
+  m_Layer: 0
+  m_Name: PhotoController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &842610339
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842610338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1567506330}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842610340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842610338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eed5b5480b4007419152672e8a02bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &842610341
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842610338}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 35706264c76838349b637f5c8d47667e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!20 &862653466 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20049547090947856, guid: 3eddd1c29199313478dd3f912bfab2ab,
+    type: 2}
+  m_PrefabInternal: {fileID: 975170473}
 --- !u!1 &865036299
 GameObject:
   m_ObjectHideFlags: 0
@@ -8608,141 +8755,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22c102fb993a46d46afec38986397d44, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &883031959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1579474663996116, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 883031960}
-  - component: {fileID: 883031964}
-  - component: {fileID: 883031963}
-  - component: {fileID: 883031962}
-  - component: {fileID: 883031961}
-  m_Layer: 5
-  m_Name: Subtitle03.1 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &883031960
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224867391563566598, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883031959}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
-  m_Children: []
-  m_Father: {fileID: 1106246031}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.016433716, y: -85.99389}
-  m_SizeDelta: {x: 1107.8, y: 89.1924}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!102 &883031961
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883031959}
-  m_Text: 
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!23 &883031962
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883031959}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!114 &883031963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114628746298840300, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883031959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 101
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &883031964
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222081016692326802, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 883031959}
 --- !u!1 &886526227
 GameObject:
   m_ObjectHideFlags: 0
@@ -9993,6 +10005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1048514796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10005,6 +10020,138 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0681, y: 4.3759007, z: 1.0219002}
   m_Center: {x: 0.022350132, y: 2.1882503, z: -0.00044242115}
+--- !u!21 &1051607800
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: d6e94599c3f0e8f47ac4fc4df92c40b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1063298077
 GameObject:
   m_ObjectHideFlags: 0
@@ -10207,6 +10354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1068428308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10562,7 +10712,6 @@ RectTransform:
   m_LocalScale: {x: 0.00049999997, y: 0.00049999997, z: 0.00049999997}
   m_Children:
   - {fileID: 2063112429}
-  - {fileID: 883031960}
   m_Father: {fileID: 1595268228}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11163,6 +11312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1142216486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11550,6 +11702,138 @@ Transform:
   m_Father: {fileID: 1636501750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1199642184
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4b7cb06fcd8d53946bb83285b1883b5d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1212506344
 GameObject:
   m_ObjectHideFlags: 0
@@ -11890,6 +12174,138 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1233827951}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &1237400709
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2385074f7d28d184798b0a87ebc2623f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &1239791668
 Prefab:
   m_ObjectHideFlags: 0
@@ -11933,7 +12349,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
+      objectReference: {fileID: 1629571814}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_exit
@@ -12039,7 +12455,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 458835900}
+      objectReference: {fileID: 306827910}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_screenshot
@@ -12067,32 +12483,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
@@ -12118,6 +12534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1250193813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12983,85 +13402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983d860ed32d0a54fa1bc0e26d06c0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1343738697
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1579474663996116, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1343738698}
-  - component: {fileID: 1343738700}
-  - component: {fileID: 1343738699}
-  m_Layer: 5
-  m_Name: 'Subtitle04 '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1343738698
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224867391563566598, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343738697}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.3334941}
-  m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.00049999997}
-  m_Children:
-  - {fileID: 1711347663}
-  m_Father: {fileID: 1595268228}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512.82166, y: -323.1647}
-  m_SizeDelta: {x: 1107.8, y: 89.1924}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1343738699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114628746298840300, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343738697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 101
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1343738700
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222081016692326802, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343738697}
 --- !u!1 &1345612391 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1977566090261290, guid: fc84f37677241644bb9b7e4573b96ec0,
@@ -13083,6 +13423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1345612394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13263,6 +13606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1359876425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13363,138 +13709,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1367964882}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &1375279928
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8f8dd28d234108d4c9e6a8e22761d3f5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1381297422
 GameObject:
   m_ObjectHideFlags: 0
@@ -13651,140 +13865,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1546045773}
+        m_MethodName: GetAnnotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!21 &1402628688
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2385074f7d28d184798b0a87ebc2623f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &1408240989
 Prefab:
   m_ObjectHideFlags: 0
@@ -13845,7 +13938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1412881844
 Transform:
   m_ObjectHideFlags: 0
@@ -14065,6 +14158,138 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1431743929}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &1436918099
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: dcb6a85f0d5dc8c4b8fb00c269b097e8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1446300069
 GameObject:
   m_ObjectHideFlags: 0
@@ -14931,6 +15156,7 @@ GameObject:
   - component: {fileID: 1546045771}
   - component: {fileID: 1546045770}
   - component: {fileID: 1546045773}
+  - component: {fileID: 1546045775}
   m_Layer: 0
   m_Name: Annotation_window
   m_TagString: Untagged
@@ -15005,7 +15231,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 862653466}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -15027,6 +15253,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820a37692cb39a84b8aa0f7a146efcbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1546045775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aebab3047f2113489ca3eb8423228b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 1546045772}
 --- !u!1 &1549324439
 GameObject:
   m_ObjectHideFlags: 0
@@ -15285,7 +15523,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 602757009}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_annotation
@@ -15364,6 +15602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!114 &1563841819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15419,6 +15660,7 @@ Transform:
   - {fileID: 460149744}
   - {fileID: 1874019193}
   - {fileID: 467630365}
+  - {fileID: 842610339}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15506,6 +15748,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1585225444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15639,7 +15884,7 @@ RectTransform:
   - {fileID: 1095022217}
   - {fileID: 94392246}
   - {fileID: 1106246031}
-  - {fileID: 1343738698}
+  - {fileID: 2004352602}
   m_Father: {fileID: 1874019193}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15803,6 +16048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1608785703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15865,6 +16113,138 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1a6ce749730b5b41abea53e4600d748, type: 2}
   m_IsPrefabParent: 0
+--- !u!21 &1629571814
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ButtonIconMaterial
+  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
+    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a00b27d5a735f7d49bdc6920b38c37a3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _Cull: 2
+    - _CullMode: 2
+    - _CustomMode: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HoverLight: 0
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Metallic: 0
+    - _Mode: 1
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 1.1
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.25
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _UseMainTex: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!4 &1636501750 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4290358936733916, guid: 743537cb832078f41b9093495b12254a,
@@ -15935,138 +16315,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!21 &1644911704
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2385074f7d28d184798b0a87ebc2623f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1651907424
 GameObject:
   m_ObjectHideFlags: 0
@@ -16098,138 +16346,6 @@ Transform:
   m_Father: {fileID: 1760262553}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1659527854
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c9ea1a1135c091140bcbe34098d281f9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1670735956
 GameObject:
   m_ObjectHideFlags: 0
@@ -16477,138 +16593,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1675577727
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4846fcc3e491eff4e8dee7bcf234b2f1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &1681160132
 GameObject:
   m_ObjectHideFlags: 0
@@ -16779,141 +16763,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706116230}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1711347662
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1579474663996116, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1711347663}
-  - component: {fileID: 1711347667}
-  - component: {fileID: 1711347666}
-  - component: {fileID: 1711347665}
-  - component: {fileID: 1711347664}
-  m_Layer: 5
-  m_Name: Subtitle04.1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1711347663
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224867391563566598, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711347662}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1343738698}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.016514897, y: -86}
-  m_SizeDelta: {x: 1107.8, y: 89.1924}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!102 &1711347664
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711347662}
-  m_Text: 
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!23 &1711347665
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711347662}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!114 &1711347666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114628746298840300, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711347662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
-    m_FontSize: 30
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 101
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1711347667
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222081016692326802, guid: 3404cd77d857d3847a89a11804f185c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711347662}
 --- !u!1 &1723218876
 GameObject:
   m_ObjectHideFlags: 0
@@ -16931,7 +16780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1723218877
 Transform:
   m_ObjectHideFlags: 0
@@ -17087,7 +16936,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
+      objectReference: {fileID: 1051607800}
     - target: {fileID: 102082490485545312, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: m_FontSize
@@ -17382,6 +17231,8 @@ GameObject:
   - component: {fileID: 1760262557}
   - component: {fileID: 1760262558}
   - component: {fileID: 1760262559}
+  - component: {fileID: 1760262561}
+  - component: {fileID: 1760262560}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -17396,7 +17247,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1760262552}
   m_LocalRotation: {x: -0.13173199, y: -0, z: -0, w: 0.99128544}
-  m_LocalPosition: {x: -0.539, y: 0.14, z: 5}
+  m_LocalPosition: {x: -0.539, y: 0.14, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2032897455}
@@ -17542,6 +17393,32 @@ MonoBehaviour:
   ignoreLayers:
     serializedVersion: 2
     m_Bits: 4
+--- !u!114 &1760262560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760262552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfadc27178601dd4ca1793492f9e2539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImportMeshPeriod: 1
+  meshMaterial: {fileID: 0}
+  MaxFrameTime: 5
+  CreateMeshColliders: 1
+--- !u!114 &1760262561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760262552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4776f41597d1274488d795eb0881c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1771010136
 Prefab:
   m_ObjectHideFlags: 0
@@ -17909,6 +17786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1789297371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18228,6 +18108,8 @@ MonoBehaviour:
     KeyCode: 99
   - Keyword: Take Picture
     KeyCode: 100
+  - Keyword: screenshot
+    KeyCode: 101
   recognitionConfidenceLevel: 1
 --- !u!114 &1849648602
 MonoBehaviour:
@@ -18337,6 +18219,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 0}
           m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: screenshot
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 842610340}
+          m_MethodName: PhotoModeActive
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -18505,6 +18404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!65 &1866122859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18636,8 +18538,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6794833, y: 0.8275714, z: 0.08096951}
-  m_Center: {x: -0.2405802, y: 0.11921446, z: -0.0068975687}
+  m_Size: {x: 0.6794833, y: 0.7759215, z: 0.08096951}
+  m_Center: {x: -0.2405802, y: 0.14503941, z: -0.0068975687}
 --- !u!1 &1880297853
 GameObject:
   m_ObjectHideFlags: 0
@@ -18766,7 +18668,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1375279928}
+      objectReference: {fileID: 2100000, guid: 4f37668d794e3694c9ee36b62447d99b, type: 2}
     - target: {fileID: 102082490485545312, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: m_FontSize
@@ -18804,32 +18706,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4400682673061142, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_LocalScale.x
@@ -18842,138 +18744,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
   m_IsPrefabParent: 0
---- !u!21 &1918405313
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: dcb6a85f0d5dc8c4b8fb00c269b097e8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &1949905076
 Prefab:
   m_ObjectHideFlags: 0
@@ -19017,7 +18787,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1918405313}
+      objectReference: {fileID: 1436918099}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_record
@@ -19045,32 +18815,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114985427041226018, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
@@ -19282,6 +19052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdcbf9b2d59c8ef499cf60ffb9e79e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameobj: {fileID: 0}
+  gameObjNote: {fileID: 0}
+  annotation: 
 --- !u!1 &1991152453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19403,6 +19176,85 @@ Transform:
   m_Father: {fileID: 774495306}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2004352601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1579474663996116, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2004352602}
+  - component: {fileID: 2004352604}
+  - component: {fileID: 2004352603}
+  m_Layer: 5
+  m_Name: Subtitle04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2004352602
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224867391563566598, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004352601}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3334941}
+  m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.00049999997}
+  m_Children:
+  - {fileID: 687087675}
+  m_Father: {fileID: 1595268228}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -512.82166, y: -323.167}
+  m_SizeDelta: {x: 1107.8, y: 89.1924}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2004352603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114628746298840300, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004352601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3d8348b7d66bae4aa4b1f3ada3ef5fd, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 101
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Annotation:'
+--- !u!222 &2004352604
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222081016692326802, guid: 3404cd77d857d3847a89a11804f185c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004352601}
 --- !u!1001 &2007976112
 Prefab:
   m_ObjectHideFlags: 0
@@ -19918,138 +19770,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064799053}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &2078754844
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: ButtonIconMaterial
-  m_Shader: {fileID: 4800000, guid: d45c0efca53019e43891b0f610f8146e, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
-  stringTagMap:
-    RenderType: TransparentCutout
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4b7cb06fcd8d53946bb83285b1883b5d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlbedoAlphaMode: 0
-    - _BlendOp: 0
-    - _BorderLight: 0
-    - _BorderLightOpaque: 0
-    - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.1
-    - _BumpScale: 1
-    - _ClippingPlane: 0
-    - _ClippingPlaneBorder: 0
-    - _ClippingPlaneBorderWidth: 0.025
-    - _ColorWriteMask: 15
-    - _Cull: 2
-    - _CullMode: 2
-    - _CustomMode: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DirectionalLight: 1
-    - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
-    - _EnableEmission: 0
-    - _EnableHoverColorOpaqueOverride: 0
-    - _EnableHoverColorOverride: 0
-    - _EnableNormalMap: 0
-    - _EnvironmentColorIntensity: 0.5
-    - _EnvironmentColorThreshold: 1.5
-    - _EnvironmentColoring: 0
-    - _FadeBeginDistance: 0.85
-    - _FadeCompleteDistance: 0.5
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _HoverLight: 0
-    - _HoverLightOpaque: 0
-    - _InnerGlow: 0
-    - _Metallic: 0
-    - _Mode: 1
-    - _NearPlaneFade: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _Reflections: 0
-    - _Refraction: 0
-    - _RefractiveIndex: 1.1
-    - _RenderQueueOverride: -1
-    - _RimLight: 0
-    - _RimPower: 0.25
-    - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _UseColor: 1
-    - _UseMainTex: 1
-    - _ZTest: 4
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
-    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
-    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
-    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
-    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
-    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1001 &2083663675
 Prefab:
   m_ObjectHideFlags: 0
@@ -20376,7 +20096,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1402628688}
+      objectReference: {fileID: 708694300}
     - target: {fileID: 1619954670119144, guid: dc25f30298e5957498e67017b4d85807, type: 2}
       propertyPath: m_Name
       value: btn_InformationPanel_Settings
@@ -20404,32 +20124,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114985427041226018, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
@@ -20766,7 +20486,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1659527854}
+      objectReference: {fileID: 520781315}
     - target: {fileID: 102082490485545312, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: m_FontSize
@@ -20804,32 +20524,32 @@ Prefab:
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[0].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[1].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[2].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[3].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[4].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114372868302156270, guid: dc25f30298e5957498e67017b4d85807,
         type: 2}
       propertyPath: AnimActions.Array.data[5].InvalidParam
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc25f30298e5957498e67017b4d85807, type: 2}
