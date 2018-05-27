@@ -114,7 +114,7 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         
         if (informationPanel != null)
         {
-            Debug.Log("JJDDJ");
+  
             informationPanel.SetActive(true);
             Vector3 tmp = gameObject.transform.TransformPoint(this.transform.up * gameObject.GetComponent<BoxCollider>().size.y);
             //add small offset for y.position
@@ -130,6 +130,18 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
             gameObjPackage.text = gameObject.transform.parent.name;
             gameObjtype.text = "TODO";
             gameObjNote.text = annotation;
+
+            if (gameObject.name.Contains("Service")){
+                gameObjtype.text = "Service";
+            }
+            if(gameObject.name.Contains("Class"))
+            {
+                gameObjtype.text = "Class";
+            }
+            if (gameObject.name.Contains("Enum") )
+            {
+                gameObjtype.text = "Enum";
+            }
         }
         
     }
