@@ -10,7 +10,7 @@ public class PanelScript : MonoBehaviour
     {
         HoverScript.informationPanel = GameObject.Find("InformationPanel");
         HoverScript.informationPanel.SetActive(false);
-        Debug.Log("log");
+        Debug.Log("Set Panel inactive");
     }
 
     // Update is called once per frame

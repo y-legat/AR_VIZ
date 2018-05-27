@@ -111,9 +111,10 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
 
         boundingBox.transform.localScale = buildingScale;
         boundingBox.SetActive(true);
-
+        
         if (informationPanel != null)
         {
+            Debug.Log("JJDDJ");
             informationPanel.SetActive(true);
             Vector3 tmp = gameObject.transform.TransformPoint(this.transform.up * gameObject.GetComponent<BoxCollider>().size.y);
             //add small offset for y.position
