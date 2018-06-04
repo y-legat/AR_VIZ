@@ -16,7 +16,7 @@ namespace HoloToolkit.Unity.UX
     /// </summary>
     public class AppBar : InteractionReceiver
     {
-        private float buttonWidth = 2f;
+        private float buttonWidth = 1.50f;
 
         /// <summary>
         /// How many custom buttons can be added to the toolbar

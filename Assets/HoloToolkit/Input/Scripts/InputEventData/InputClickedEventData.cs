@@ -24,7 +24,5 @@ namespace HoloToolkit.Unity.InputModule
             Initialize(inputSource, sourceId, tag, pressType);
             TapCount = tapCount;
         }
-
-        
     }
 }
