@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.XR;
+
 using HoloToolkit.Unity.InputModule;
 using HoloToolkit.UI.Keyboard;
 
@@ -11,6 +13,11 @@ public class SceneSettings : MonoBehaviour, IInputClickHandler {
     void Awake () {
         InputManager.Instance.AddGlobalListener(gameObject);
 	}
+
+    void Start()
+    {
+        XRSettings.eyeTextureResolutionScale = 1.0f;
+    }
 	
 	// Update is called once per frame
 	void Update () {

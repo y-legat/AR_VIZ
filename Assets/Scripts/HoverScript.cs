@@ -4,12 +4,17 @@ using HoloToolkit.Unity.InputModule;
 using UnityEngine.UI;
 using UnityEngine;
 
-
+using HoloToolkit.UI.Keyboard;
 
 public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
 {
-    private static GameObject boundingBox;
+    public static GameObject boundingBox;
     public static GameObject informationPanel;
+    public static GameObject buttonSettings;
+    public static GameObject buttonExtended;
+    public static GameObject buttonDeveloper;
+    public static GameObject annotationWindow;
+
     public static GameObject activeObj;
 
     private Material[] defaultMaterials;
@@ -22,9 +27,6 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
     private InputManager inputManager;
 
     public string annotation;
-
-    
-
 
     private void Start()
     {
@@ -46,7 +48,7 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         defaultMaterials = GetComponent<Renderer>().materials;
 
 
-        if (!GameObject.Find("BuildingBoundingBox"))
+        if (boundingBox == null)
         { 
 
             boundingBox = new GameObject("BuildingBoundingBox");
@@ -108,6 +110,14 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         buildingScale.x = buildingScale.x * 10;
         buildingScale.y = buildingScale.y * 5.5f;
         buildingScale.z = buildingScale.z * 5.5f;
+
+        informationPanel.SetActive(true);
+        buttonSettings.SetActive(true);
+        buttonExtended.SetActive(false);
+        buttonDeveloper.SetActive(false);
+        annotationWindow.SetActive(false);
+
+        GameObject.Find("Holograms").GetComponent<PanelScript>().keyboard.Close();
 
         boundingBox.transform.localScale = buildingScale;
         boundingBox.SetActive(true);

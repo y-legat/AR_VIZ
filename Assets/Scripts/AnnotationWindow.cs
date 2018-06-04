@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+using HoloToolkit.UI.Keyboard;
+
 public class AnnotationWindow : MonoBehaviour {
 
     private GameObject gameObj;
     private GameObject textObj;
     private GameObject activeObj;
     private GameObject[] tmp;
-    private Text note;
+    private KeyboardInputField note;
     
 
     // Use this for initialization
@@ -28,7 +30,7 @@ public class AnnotationWindow : MonoBehaviour {
         if (GameObject.Find("Annotation_window") != null)
         {
 
-            note = GameObject.Find("MessageInputField/Text").GetComponent<Text>();
+            note = GameObject.Find("MessageInputField").GetComponent<KeyboardInputField>();
             HoverScript.activeObj.GetComponent<HoverScript>().annotation = note.text;
             HoverScript.activeObj.GetComponent<HoverScript>().gameObjNote.text = note.text;
             //TODO tmp = HoverScript.FindObjectsOfType<GameObject>;
@@ -38,8 +40,8 @@ public class AnnotationWindow : MonoBehaviour {
         else
             Debug.Log("No GameObject with the name 'Text' attached to the gameObject");
 
-       
 
+        GameObject.Find("Holograms").GetComponent<PanelScript>().keyboard.Close();
 
 
         //TODO save Annotation to Gameobject -> create Field in InformationPanel for Information messages 
