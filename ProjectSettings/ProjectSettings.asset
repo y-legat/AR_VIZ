@@ -42,7 +42,7 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: ee4312156b02ace4888674537bbf4efe,
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: a3adab1275a32b146844aa423b72fedd,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -578,7 +578,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 0030670795ffd401
+  metroCertificateNotAfter: 800e4052241bd501
   metroApplicationDescription: ARVis
   wsaImages: {}
   metroTileShortName: ARVis

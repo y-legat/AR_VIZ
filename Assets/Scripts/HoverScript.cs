@@ -26,6 +26,9 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
     public Text gameObjNote;
     private InputManager inputManager;
 
+    public Text Tooltip_txt;
+    public static GameObject ToolTip_frame;
+
     public string annotation;
 
     private void Start()
@@ -46,7 +49,6 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
             gameObjNote = GameObject.Find("InformationPanel/TextContent/Subtitle04/Subtitle04.1").GetComponent<Text>();
         }
         defaultMaterials = GetComponent<Renderer>().materials;
-
 
         if (boundingBox == null)
         { 
@@ -76,8 +78,16 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
             gameObject.transform.parent.GetComponent<Renderer>().material = defaultMaterials[i];
             //gameObject.transform.parent.GetComponent<Renderer>().material.SetFloat("_Gloss", 10.0f);
         }
-       // Debug.Log(gameObject.transform.parent.name);
-        
+
+        if(!(activeObj == gameObject)){
+            ToolTip_frame.SetActive(true);
+            ToolTip_frame.transform.position = gameObject.transform.position;
+            ToolTip_frame.transform.position += (gameObject.GetComponent<BoxCollider>().extents.y / 4) * gameObject.transform.up;
+            GameObject.Find("ToolTip_txt").GetComponent<Text>().text = gameObject.transform.name;
+        }
+
+        // Debug.Log(gameObject.transform.parent.name);
+
     }
 
     public void OnFocusExit()
@@ -89,6 +99,8 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
             //reset parent matrial 
             gameObject.transform.parent.GetComponent<Renderer>().material = tmp;
         }
+
+        ToolTip_frame.SetActive(false);
     }
 
     private void OnDestroy()
@@ -118,9 +130,10 @@ public class HoverScript : MonoBehaviour, IFocusable, IInputClickHandler
         annotationWindow.SetActive(false);
 
         GameObject.Find("Holograms").GetComponent<PanelScript>().keyboard.Close();
-
         boundingBox.transform.localScale = buildingScale;
         boundingBox.SetActive(true);
+        ToolTip_frame.SetActive(false);
+
         
         if (informationPanel != null)
         {

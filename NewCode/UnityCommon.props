@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>ARVis</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\ylegat\Desktop\AR_Viz\NewCode\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\ylegat\Desktop\AR_Viz\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity2017.4.1f1\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>

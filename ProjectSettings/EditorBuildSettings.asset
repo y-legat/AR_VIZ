@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/HoloToolkit-Examples/Input/Scenes/KeyboardTest.unity
     guid: 3fb77ac039974de4c9946609c18cdae7
+  - enabled: 0
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2351ef79b5dd8a14f86f9d73483734fc

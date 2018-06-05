@@ -18,6 +18,7 @@ public class PanelScript : MonoBehaviour
         HoverScript.buttonExtended = GameObject.Find("menu_InformationPanel_Settings_extended");
         HoverScript.buttonDeveloper = GameObject.Find("menu_InformationPanel_Settings_developer");
         HoverScript.annotationWindow = GameObject.Find("Annotation_window");
+        HoverScript.ToolTip_frame = GameObject.Find("Tooltip2");
 
         HoverScript.buttonSettings.SetActive(true);
         HoverScript.buttonSettings.SetActive(false);
