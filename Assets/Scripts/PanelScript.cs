@@ -10,9 +10,9 @@ public class PanelScript : MonoBehaviour
     public Keyboard keyboard;
 
     // Use this for initialization
+    //inital point: set all gameobjects inactive, besides main menu
     void Awake()
     {
-
         HoverScript.informationPanel = GameObject.Find("InformationPanel");
         HoverScript.buttonSettings = GameObject.Find("btn_InformationPanel_Settings");
         HoverScript.buttonExtended = GameObject.Find("menu_InformationPanel_Settings_extended");
@@ -26,7 +26,7 @@ public class PanelScript : MonoBehaviour
         HoverScript.annotationWindow.SetActive(false);
         HoverScript.informationPanel.SetActive(false);
 
-        Debug.Log("Set Panel inactive");
+        //Debug.Log("Set Panel inactive");
     }
 
     // Update is called once per frame
