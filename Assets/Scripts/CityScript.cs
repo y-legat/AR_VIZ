@@ -2,21 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using HoloToolkit.Unity.UX;
+
 public class CityScript : MonoBehaviour {
 
     private Vector3 initialPos;
     private GameObject city;
-	// Use this for initialization
+    private GameObject appBar;
+    
+    // Use this for initialization
 	void Start ()
     {
         GameObject.Find("SzeneContent/Holograms/City");
+        // save inital position for resetCity() / voice command 'reset city' 
         initialPos = GameObject.Find("SzeneContent/Holograms/City").transform.position;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (appBar == null)
+        {
+            appBar = GameObject.Find("AppBar(Clone)");
+            if (appBar != null)
+            {
+                //Debug.Log("Found AppBar");
+                HoverScript.appBarScript = appBar.GetComponent<AppBar>();
+            }
+        }
+    }
 
     public void showCityButton()
     {
@@ -24,7 +37,6 @@ public class CityScript : MonoBehaviour {
         GameObject.Find("Menu_main").SetActive(false);
         //set City active
         GameObject.Find("SzeneContent/Holograms/City").SetActive(true);        
-        //GameObject.Find("SzeneContent/InformationPanel").SetActive(true);
     }
 
     public void resetCity()
