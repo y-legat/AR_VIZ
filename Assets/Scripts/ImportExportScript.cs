@@ -20,10 +20,8 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
     // Use this for initialization
     void Start()
     {
-
         clicked = false;
         highlightMaterials = GetComponent<Renderer>().materials;
-
     }
 
     // Update is called once per frame
@@ -38,11 +36,9 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
         {
             // structure: empty element -> child = dependencies 
             child = gameObject.transform.GetChild(0).gameObject;
-            child.SetActive(true);
-            
+            child.SetActive(true);            
             highlightMaterials[0].SetFloat("_Gloss", 5.0f);
-        }
-            
+        }           
  
     }
 
@@ -54,7 +50,6 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
             clicked = false;
             highlightMaterials[0].SetFloat("_Gloss", 1.0f);
         }
-
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
@@ -84,18 +79,14 @@ public class ImportExportScript : MonoBehaviour, IFocusable, IInputClickHandler
 
         }
 
-
     }
 
-   
+   //set all dependencies inactive
     public void deselectAllDependencies()
     {
-
-        //TODO global List with added Dependencies : 
         foreach (GameObject g in activeDependencies)
         {
             g.SetActive(false);
-
         }
         activeDependencies.Clear();
     }

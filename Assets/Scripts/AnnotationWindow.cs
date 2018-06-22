@@ -29,23 +29,17 @@ public class AnnotationWindow : MonoBehaviour {
 
         if (GameObject.Find("Annotation_window") != null)
         {
-
             note = GameObject.Find("MessageInputField").GetComponent<KeyboardInputField>();
             HoverScript.activeObj.GetComponent<HoverScript>().annotation = note.text;
             HoverScript.activeObj.GetComponent<HoverScript>().gameObjNote.text = note.text;
-            //TODO tmp = HoverScript.FindObjectsOfType<GameObject>;
             note.text = "";
            
         }
         else
             Debug.Log("No GameObject with the name 'Text' attached to the gameObject");
-
-
+        
         GameObject.Find("Holograms").GetComponent<PanelScript>().keyboard.Close();
-
-
-        //TODO save Annotation to Gameobject -> create Field in InformationPanel for Information messages 
-
+        
     }
 
     public void GetAnnotation()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.WSA.WebCam;
 
-//some parts from https://docs.microsoft.com/de-de/windows/mixed-reality/locatable-camera-in-unity
+// from https://docs.microsoft.com/de-de/windows/mixed-reality/locatable-camera-in-unity
 
 public class ScreenShot : MonoBehaviour {
 

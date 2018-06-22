@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using HoloToolkit.Unity.InputModule;
 using UnityEngine;
 
+//text to speach for annotation functionality
 public class test_record : MonoBehaviour, IInputClickHandler,  IDictationHandler
 {
     [SerializeField]
@@ -65,7 +66,7 @@ public class test_record : MonoBehaviour, IInputClickHandler,  IDictationHandler
     {
         if (!string.IsNullOrEmpty(speechToTextOutput) && !lastOutput.Equals(speechToTextOutput))
         {
-            Debug.Log(speechToTextOutput);
+            //Debug.Log(speechToTextOutput);
             lastOutput = speechToTextOutput;
         }
     }

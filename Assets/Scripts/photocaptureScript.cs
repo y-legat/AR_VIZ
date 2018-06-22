@@ -3,6 +3,8 @@ using System.Collections;
 using System.Linq;
 using UnityEngine.XR.WSA.WebCam;
 
+
+//take screenshot and play foto capture sound for auditive feedback
 public class photocaptureScript : MonoBehaviour
 {
     PhotoCapture photoCaptureObject = null;

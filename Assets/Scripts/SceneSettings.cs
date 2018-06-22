@@ -29,11 +29,10 @@ public class SceneSettings : MonoBehaviour, IInputClickHandler {
         GameObject focusedObject = FocusManager.Instance.GetFocusedObject(GazeManager.Instance);
         if(focusedObject == null)
         {
-            Debug.Log("Focused Object null");
+           // Debug.Log("Focused Object null");
             if(HoverScript.activeObj != null)
             {
-                Debug.Log("Active Object not null");
-
+                //Debug.Log("Active Object not null");
                 HoverScript.informationPanel.SetActive(false);
                 HoverScript.buttonSettings.SetActive(true);
                 HoverScript.buttonExtended.SetActive(false);

@@ -16,7 +16,7 @@ public class ExitScript : MonoBehaviour {
 	void Update () {
 		
 	}
-
+    //Exit Application
     public void ExitAndQuit()
     {
         Debug.Log("Exit and Quit!");

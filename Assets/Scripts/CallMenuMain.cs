@@ -5,7 +5,7 @@ using UnityEngine;
 public class CallMenuMain : MonoBehaviour {
 
 
-    // Todo when main menu is called activate main menu and activate tag along script
+    //necessary: otherwise InformationPanel not found
 
 	// Use this for initialization
 	void Awake () {
